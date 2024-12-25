@@ -48,6 +48,6 @@ class Handler(FileSystemEventHandler):
             self.process.terminate()  # Clean up the process when the handler is destroyed
 
 if __name__ == "__main__":
-    script_to_watch = "Lab2.py"  # Replace with your script name
+    script_to_watch = "maze_runner.py"  # Replace with your script name
     watcher = Watcher(script_to_watch)
     watcher.run()

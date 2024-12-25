@@ -1,0 +1,116 @@
+Maze Runner Game Design (2D)
+
+Game Flow
+
+Start Screen:
+
+Title: "Maze Runner" (GL_POINTS).
+
+Options: Start Game, Instructions, Exit.
+
+Navigation: Keyboard inputs.
+
+Game Start:
+
+Display a 2D maze.
+
+Runner: A distinct cluster of points (e.g., red).
+
+Maze walls: Drawn using the midpoint line algorithm.
+
+Exit: Marked by a flashing color.
+
+Objective:
+
+Complete all 5 levels of increasing difficulty.
+
+Avoid traps and reach the exit within the given time.
+
+Gameplay Loop:
+
+Movement: Arrow keys; restricted by maze walls.
+
+Obstacles:
+
+Static traps (colored points).
+
+Moving circles (timing-based avoidance).
+
+Collectibles: Keys or glowing points to unlock paths.
+
+Levels:
+
+Each level increases in maze complexity and number of obstacles.
+
+Timer for each level decreases as difficulty increases.
+
+End Game:
+
+Win: Successfully complete all levels.
+
+Lose:
+
+Fail to complete a level within the time limit.
+
+Fall into a trap and lose all lives.
+
+Display a victory/defeat screen.
+
+Post-Game Options:
+
+Replay or exit to the main menu.
+
+Core Functionalities
+
+Maze Design:
+
+2D grid layout.
+
+Walls drawn using the midpoint line algorithm.
+
+Runner Representation:
+
+Small cluster of points.
+
+Color/animation for visibility.
+
+Obstacles:
+
+Static traps (colored points).
+
+Moving circles using the midpoint circle algorithm.
+
+Collectibles:
+
+Keys or glowing points to unlock paths or add bonuses.
+
+Scoring System:
+
+Track time taken.
+
+Optional penalties for collisions and bonuses for collectibles.
+
+Level System:
+
+5 levels with increasing maze complexity, shorter timers, and more obstacles.
+
+Lives decrease upon falling into traps.
+
+Unique Features
+
+Shifting Paths:
+
+Disappearing/reappearing walls for dynamic gameplay.
+
+Multi-Key Challenge:
+
+Exit locked until all keys are collected.
+
+Simple AI Enemies:
+
+Randomly moving circular chasers.
+
+Maze Highlighting:
+
+Briefly shows a suggested path for guidance.
+
