@@ -1,41 +1,49 @@
-"""
-### **Maze Runner Game Design (2D)**
+# 🎮 Maze Runner
 
-#### **Game Flow**
-1. **Start Screen**:
-   - Title: "Maze Runner" (GL_POINTS).
-   - Options: Start Game, Instructions, Exit.
-   - Navigation: Keyboard inputs / Mouse clicks.
+A neon-themed maze exploration game created with OpenGL/GLUT.
 
-2. **Game Start**:
-   - Display a 2D maze.
-   - Runner: A minimal shape of a 2d man, more like mincraft like human.
-   - Maze walls: Drawn using the midpoint line algorithm.
-   - Exit: Marked by a flashing color.
+## 🚀 Overview
 
-3. **Objective**:
-   - Complete all 3 levels of increasing difficulty.
-   - Fall into traps or circles
+**Maze Runner** is a thrilling maze exploration game where players navigate through procedurally generated labyrinths against the clock. With its vibrant neon aesthetic, players must collect magic balls to unlock paths, avoid evil dots, and find the exit before time runs out.
 
-4. **Gameplay Loop**:
-   - **Movement**: Arrow keys; restricted by maze walls.
-   - **Obstacles**: 
-     - Static traps (colored points).
-     - Moving circles (timing-based avoidance).
-   - **Collectibles**: Keys or glowing points to unlock paths that means open a blocked path.
-   - **Levels**:
-     - Each level increases in maze complexity and number of obstacles.
-     - Timer for each level decreases as difficulty increases.
+## ✨ Features
 
-5. **End Game**:
-   - **Win**: Successfully complete all levels.
-   - **Lose**: 
-     1. Fail to complete a level within the time limit.
-     2. Fall into a trap and lose all lives.
-   - Display a victory/defeat screen.
+- **Procedurally Generated Mazes**: Never play the same maze twice
+- **Time Challenge**: Race against the clock to escape
+- **Magic Balls**: Collect to unlock new paths through the maze
+- **Evil Dots**: Avoid these deadly obstacles to stay alive
+- **Neon Aesthetics**: Vibrant visuals with a retro-futuristic feel
 
+## 🎮 Controls
 
-6. **Post-Game Options**:
-   - Replay or exit to the main menu.
+- **Arrow Keys / WASD**: Navigate your character through the maze
+- **Mouse**: Navigate menus
 
-"""
+## 🏆 Game Objectives
+
+1. **Navigate** through the maze to reach the exit
+2. **Collect** magic balls to unlock blocked paths
+3. **Avoid** evil dots - one touch means game over!
+4. **Beat** the clock - you only have 60 seconds!
+
+## 🛠️ Project Structure
+
+- **maze_runner.py**: Main game file
+- **OpenGL/**: Library files included in the repository
+- **Starting_Template.py**: OpenGL template with documented code sections
+- **watch.py**: Auto-restarts the script when changes are detected during development
+
+## 🚀 How to Run
+
+```bash
+# Standard run
+python maze_runner.py
+
+# For development
+python watch.py
+```
+
+## 📝 Requirements
+
+- Python 3.x
+- PyOpenGL
