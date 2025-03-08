@@ -1,3 +1,7 @@
+"""
+* This script uses watchdog to monitor a file for changes and restarts the script when the file is modified. So you don't need to manually restart the script every time you make a change.
+* Change the variable `script_to_watch` to the name of your script accordingly.
+"""
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import os
@@ -45,7 +49,7 @@ class Handler(FileSystemEventHandler):
 
     def __del__(self):
         if self.process is not None:
-            self.process.terminate()  # Clean up the process when the handler is destroyed
+            self.process.terminate() 
 
 if __name__ == "__main__":
     script_to_watch = "maze_runner.py"  # Replace with your script name

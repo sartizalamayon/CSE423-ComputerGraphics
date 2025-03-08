@@ -1,3 +1,10 @@
+"""
+* This is a template for OpenGL in Python using OpenGL library.
+* Every function is explained as a comment.
+* For separation of concerns, the code is divided into sections.
+* Start reading the code from 'Main Function' section at the bottom.
+"""
+
 ############################# Libraries #############################
 from OpenGL.GL import *       # Core OpenGL functions for rendering
 from OpenGL.GLUT import *     # GLUT (Utility Toolkit) for windowing and event handling
